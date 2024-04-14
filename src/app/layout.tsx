@@ -1,17 +1,15 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { Inter as FontSans } from 'next/font/google';
 import Link from 'next/link';
 
 import { Icons } from '@/components/icons';
 import { ModeToggle } from '@/components/mode-toggle';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Button } from '@/components/ui/button';
+import { fontSans } from '@/libs/fonts';
 import { cn } from '@/libs/utils';
 
 import '@/styles/globals.css';
-
-const fontSans = FontSans({ subsets: ['latin'], variable: '--font-sans' });
 
 type RootLayoutProps = Readonly<{
   children: ReactNode;
