@@ -10,7 +10,6 @@
     "format:check": "prettier --check .",
     "lint": "next lint --fix",
     "lint:check": "next lint",
-    "postinstall": "prisma generate",
     "prepare": "husky",
     "start": "next start",
     "typecheck": "tsc --noEmit",
