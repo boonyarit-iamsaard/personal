@@ -18,6 +18,18 @@ export function SiteHeader() {
           </Link>
 
           <nav className="flex items-center gap-4 text-sm lg:gap-6">
+            <Link
+              href="/articles"
+              className="text-sm text-foreground transition-colors hover:text-foreground/80"
+            >
+              Articles
+            </Link>
+            <Link
+              href="/projects"
+              className="text-sm text-foreground transition-colors hover:text-foreground/80"
+            >
+              Projects
+            </Link>
             <Button asChild variant="ghost" className="h-8 w-8 px-0">
               <Link
                 href="https://github.com/boonyarit-iamsaard/personal"
