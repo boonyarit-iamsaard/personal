@@ -3,6 +3,8 @@ import '@/styles/globals.css';
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import { ThemeProvider } from '@/components/theme-provider';
 import { cn } from '@/libs/utils/cn';
 import { fontMono, fontSans } from '@/libs/utils/fonts';
@@ -29,6 +31,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
