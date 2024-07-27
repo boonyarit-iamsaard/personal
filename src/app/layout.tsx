@@ -12,7 +12,7 @@ type RootLayoutProps = Readonly<{
 }>;
 
 export const metadata: Metadata = {
-  title: 'Personal Site',
+  title: 'Boonyarit I.',
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -26,12 +26,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontMono.variable,
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          // disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
       </body>
