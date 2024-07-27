@@ -3,6 +3,7 @@ import '@/styles/globals.css';
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 
+import { ThemeProvider } from '@/components/theme-provider';
 import { cn } from '@/libs/utils/cn';
 import { fontMono, fontSans } from '@/libs/utils/fonts';
 
@@ -25,7 +26,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontMono.variable,
         )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          // disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

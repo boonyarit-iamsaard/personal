@@ -3,6 +3,7 @@
 import Link from 'next/link';
 
 import { Icons } from '@/components/icons';
+import { ModeToggle } from '@/components/mode-toggle';
 import { Button } from '@/components/ui/button';
 
 export function SiteHeader() {
@@ -14,7 +15,7 @@ export function SiteHeader() {
             href="/"
             className="text-sm font-bold text-foreground transition-colors hover:text-foreground/80"
           >
-            Home
+            Boonyarit I.
           </Link>
 
           <nav className="flex items-center gap-4 text-sm lg:gap-6">
@@ -30,16 +31,30 @@ export function SiteHeader() {
             >
               Projects
             </Link>
-            <Button asChild variant="ghost" className="h-8 w-8 px-0">
-              <Link
-                href="https://github.com/boonyarit-iamsaard/personal"
-                target="_blank"
-                rel="noreferrer"
+            <Link
+              href="/about"
+              className="text-sm text-foreground transition-colors hover:text-foreground/80"
+            >
+              About
+            </Link>
+            <div className="space-x-2">
+              <Button
+                asChild
+                variant="ghost"
+                size="icon"
+                className="rounded-full"
               >
-                <Icons.gitHub className="h-4 w-4" />
-                <span className="sr-only">GitHub</span>
-              </Link>
-            </Button>
+                <Link
+                  href="https://github.com/boonyarit-iamsaard/personal"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Icons.gitHub className="h-[1.2rem] w-[1.2rem]" />
+                  <span className="sr-only">GitHub</span>
+                </Link>
+              </Button>
+              <ModeToggle />
+            </div>
           </nav>
         </div>
       </div>
