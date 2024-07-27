@@ -15,6 +15,7 @@ type RootLayoutProps = Readonly<{
 
 export const metadata: Metadata = {
   title: 'Boonyarit I.',
+  description: 'A self-taught developer who builds things around the web.',
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
