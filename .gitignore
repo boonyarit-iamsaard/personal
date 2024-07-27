@@ -37,4 +37,5 @@ yarn-error.log*
 next-env.d.ts
 
 # editor
+/.idea
 /.vscode/cspell.json
