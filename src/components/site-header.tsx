@@ -9,8 +9,8 @@ import { NavList } from '@/types/nav';
 
 const mainNav: NavList[] = [
   {
-    label: 'Articles',
-    href: '/articles',
+    label: 'Blog',
+    href: '/blog',
   },
   {
     label: 'Projects',
