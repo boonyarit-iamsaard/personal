@@ -81,17 +81,13 @@ export default async function PostPage({ params }: PostPageProps) {
           />
         )}
         <Mdx code={post.body} />
-        <div className="space-y-2">
-          <hr />
-
-          <Link
-            href="/blog"
-            className="inline-flex items-center text-sm text-muted-foreground underline-offset-4 hover:underline"
-          >
-            <ChevronLeft className="mr-2 size-4" />
-            See all posts
-          </Link>
-        </div>
+        <Link
+          href="/blog"
+          className="inline-flex items-center text-sm text-muted-foreground decoration-muted underline-offset-4 hover:underline"
+        >
+          <ChevronLeft className="mr-2 size-4" />
+          See all posts
+        </Link>
       </article>
     </section>
   );
